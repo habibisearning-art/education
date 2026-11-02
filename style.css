@@ -1,0 +1,735 @@
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: ivory;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* navigation */
+
+.navbar {
+    width: 90%;
+    margin: 22px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: green;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 28px;
+}
+
+.navbar nav a {
+    font-size: 14px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav-right button {
+    background: black;
+    color: white;
+    padding: 11px 18px;
+     border-radius: 20px;
+}
+
+/* hero */
+
+.hero {
+    width: 90%;
+    margin: 65px auto 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    width: 52%;
+}
+
+.scribble {
+    color: green;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.hero h1 {
+    font-size: 47px;
+    line-height: 1.1;
+    max-width: 620px;
+}
+
+.hero h1 span {
+    color: green;
+}
+
+.hero p {
+    color: dimgray;
+    line-height: 1.6;
+    font-size: 15px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.green-btn {
+    background: lightgreen;
+    padding: 13px 20px;
+    border-radius: 20px;
+}
+
+.green-btn:hover {
+    background: yellowgreen;
+}
+
+.journey {
+    font-size: 14px;
+}
+
+.journey span {
+    display: inline-block;
+    border: 1px solid darkgray;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+/* hero image */
+
+.hero-image {
+    width: 42%;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 48% 48% 12px 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.green-shape {
+    width: 220px;
+    height: 220px;
+    background: lightgreen;
+    position: absolute;
+    right: -20px;
+    top: -25px;
+    border-radius: 50%;
+}
+
+.heart {
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+    background: white;
+    border-radius: 50%;
+    padding: 8px 11px;
+    font-size: 24px;
+    z-index: 3;
+}
+
+/* cards */
+
+.features {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 13px;
+}
+
+.feature {
+    height: 185px;
+    flex: 1;
+    padding: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature h3 {
+    font-size: 19px;
+    line-height: 1.2;
+}
+
+.feature span {
+    position: absolute;
+    right: 17px;
+    top: 15px;
+    font-size: 23px;
+}
+
+.feature img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -10px;
+    bottom: -20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.yellow {
+    background: khaki;
+     border-radius: 20px;
+}
+
+.purple {
+    background: lavender;
+     border-radius: 20px;
+}
+
+.green {
+    background: lightgreen;
+     border-radius: 20px;
+}
+
+.pink {
+    background: pink;
+     border-radius: 20px;
+}
+
+.blue {
+    background: lightblue;
+     border-radius: 20px;
+}
+
+/* learning */
+
+.learning {
+    width: 90%;
+    margin: 90px auto;
+    padding: 45px;
+    background: beige;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    position: relative;
+     border-radius: 20px;
+}
+
+.learning-text {
+    width: 48%;
+}
+
+.learning h2 {
+    font-size: 40px;
+    line-height: 1.1;
+}
+
+.learning p {
+    color: dimgray;
+    line-height: 1.6;
+    margin: 18px 0;
+    max-width: 470px;
+    border-radius: 20px;
+}
+
+.learning a {
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.learning-image {
+    width: 42%;
+    position: relative;
+     border-radius: 20px;
+}
+
+.learning-image img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.light-green {
+    width: 120px;
+    height: 120px;
+    background: lightgreen;
+    border-radius: 50%;
+    position: absolute;
+    right: -20px;
+    top: -30px;
+}
+
+.fun {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background: khaki;
+    padding: 12px 16px;
+    font-weight: bold;
+    transform: rotate(-4deg);
+}
+
+/* stats */
+
+.stats {
+    width: 80%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.stats strong {
+    display: block;
+    font-size: 36px;
+}
+
+.stats small {
+    color: gray;
+}
+
+.line {
+    width: 1px;
+    height: 50px;
+    background: lightgray;
+}
+
+/* knowledge */
+
+.knowledge {
+    width: 90%;
+    margin: 90px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.knowledge-text {
+    width: 50%;
+}
+
+.knowledge h2 {
+    font-size: 39px;
+    line-height: 1.15;
+}
+
+.knowledge h2 span {
+    color: green;
+}
+
+.knowledge p {
+    color: dimgray;
+    line-height: 1.6;
+    margin-top: 18px;
+    max-width: 500px;
+}
+
+.checks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    margin: 22px 0;
+    font-size: 14px;
+}
+
+.knowledge-image {
+    width: 43%;
+    position: relative;
+}
+
+.knowledge-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.yellow-shape {
+    width: 160px;
+    height: 160px;
+    background: khaki;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+}
+
+/* classrooms */
+
+.classrooms {
+    width: 90%;
+    margin: 90px auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.classroom-text {
+    width: 47%;
+}
+
+.section-label {
+    color: olive;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.classroom-text h2 {
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.classroom-text h2 span {
+    color: green;
+}
+
+.classroom-text p {
+    color: dimgray;
+    line-height: 1.6;
+}
+
+.classroom-text ul {
+    padding-left: 20px;
+    margin: 18px 0;
+    line-height: 1.9;
+}
+
+.classroom-preview {
+    width: 48%;
+    background: beige;
+    padding: 15px;
+}
+
+.screen-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.video-area {
+    position: relative;
+}
+
+.video-area img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.live-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px 8px;
+    font-size: 11px;
+}
+
+.student-list {
+    display: flex;
+    gap: 9px;
+    margin-top: 13px;
+}
+
+.student-list div {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: lavender;
+}
+
+.student-list div:nth-child(2) {
+    background: pink;
+}
+
+.student-list div:nth-child(3) {
+    background: lightblue;
+}
+
+.student-list div:nth-child(4) {
+    background: lightgreen;
+}
+
+/* faq */
+
+.faq {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    gap: 60px;
+}
+
+.faq-heading {
+    width: 40%;
+}
+
+.faq-heading > span {
+    color: green;
+    font-size: 13px;
+}
+
+.faq-heading h2 {
+    font-size: 39px;
+    line-height: 1.15;
+    margin: 12px 0;
+}
+
+.faq-heading p {
+    color: gray;
+    line-height: 1.5;
+}
+
+.faq-list {
+    width: 55%;
+}
+
+details {
+    border-bottom: 1px solid lightgray;
+    padding: 17px 0;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details p {
+    color: dimgray;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* final section */
+
+.final-cta {
+    width: 90%;
+    margin: 60px auto;
+    padding: 40px;
+    background: lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     border-radius: 20px;
+}
+
+.final-cta p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.final-cta h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.final-cta span {
+    font-size: 14px;
+}
+
+.final-cta button {
+    background: black;
+    color: white;
+    padding: 13px 20px;
+     border-radius: 20px;
+}
+
+/* footer */
+
+footer {
+    width: 90%;
+    margin: 60px auto 20px;
+    padding-top: 30px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-logo {
+    width: 30%;
+}
+
+.footer-logo p {
+    color: gray;
+    line-height: 1.5;
+    margin-top: 12px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 4px;
+}
+
+.footer-column a {
+    color: gray;
+    font-size: 14px;
+}
+
+/* smaller screens */
+
+@media (max-width: 900px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero,
+    .learning,
+    .knowledge,
+    .classrooms,
+    .faq {
+        flex-direction: column;
+    }
+
+    .hero-text,
+    .hero-image,
+    .learning-text,
+    .learning-image,
+    .knowledge-text,
+    .knowledge-image,
+    .classroom-text,
+    .classroom-preview,
+    .faq-heading,
+    .faq-list {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .learning {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero {
+        margin-top: 35px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .features {
+        display: block;
+    }
+
+    .feature {
+        margin-bottom: 12px;
+    }
+
+    .stats {
+        width: 95%;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .checks {
+        grid-template-columns: 1fr;
+    }
+
+    .final-cta {
+        display: block;
+    }
+
+    .final-cta button {
+        margin-top: 20px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-logo {
+        width: 100%;
+    }
+}
